@@ -1,0 +1,32 @@
+[
+  {
+    "arguments": [
+      "/home/me/opt/emsdk/upstream/bin/clang",
+      "-target",
+      "wasm32-unknown-emscripten",
+      "-fignore-exceptions",
+      "-mllvm",
+      "-combiner-global-alias-analysis=false",
+      "-mllvm",
+      "-enable-emscripten-sjlj",
+      "-mllvm",
+      "-disable-lsr",
+      "--sysroot=/home/me/opt/emsdk/upstream/emscripten/cache/sysroot",
+      "-DEMSCRIPTEN",
+      "-Xclang",
+      "-iwithsysroot/include/fakesdl",
+      "-Xclang",
+      "-iwithsysroot/include/compat",
+      "-c",
+      "-Os",
+      "-DPLATFORM_WEB",
+      "-Wall",
+      "-Wextra",
+      "-Iext/rl_html5/include",
+      "-osrc/main.c.o",
+      "src/main.c"
+    ],
+    "directory": "/home/me/Proj/brackeys",
+    "file": "/home/me/Proj/brackeys/src/main.c"
+  }
+]
