@@ -17,7 +17,6 @@ void Update(void){
 }
 
 int main(void){
-
   InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
 
 #if defined(PLATFORM_WEB)
@@ -25,8 +24,7 @@ int main(void){
 #else
   SetTargetFPS(60);
 
-  while (!WindowShouldClose())
-  {
+  while (!WindowShouldClose()){
     Update();
   }
 #endif
